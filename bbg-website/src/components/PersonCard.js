@@ -8,35 +8,42 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+import './PersonCard.css';
 import kevinImg from "../assets/kevin.png"
 
-const styles = {
-  card: {
-    maxWidth: 345,
+
+const styles = 
+{
+  card: 
+  {
+    maxWidth: 400
   },
-  media: {
+  media: 
+  {
     height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
+    paddingTop: '100%'
+  }
 };
 
-function SimpleMediaCard(props) {
+function SimpleMediaCard(props) 
+{
   const { classes } = props;
   return (
-    <div>
+    <div className="MainCard">
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
           image={kevinImg}
-          title="Contemplative Reptile"
+          title="Kevin Thomas from Bean Boy Games"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2">
-            Lizard
+            Kevin Thomas
           </Typography>
           <Typography component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            across all continents except Antarctica fbdshk fbdhfksbd fhdsfbhsdjkfbhdjkfb dkhszlf 
+            bfd kl lfbjdklf bsdjaklfbsdjkalfb djsklfbdjs klfbdjkl fbjdkla bsdjaklfbsdjkalfb
           </Typography>
         </CardContent>
       </Card>
@@ -44,7 +51,8 @@ function SimpleMediaCard(props) {
   );
 }
 
-SimpleMediaCard.propTypes = {
+SimpleMediaCard.propTypes = 
+{
   classes: PropTypes.object.isRequired,
 };
 
