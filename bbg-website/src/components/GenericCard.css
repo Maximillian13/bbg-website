@@ -1,0 +1,25 @@
+.MainCard
+{
+  margin-left: 2%;
+  margin-top: 1%;
+  width: 40%;
+  display: inline-block;
+
+}
+
+.Card
+{
+  height: 550px;
+}
+
+p
+{
+  padding: 2%;
+  text-decoration: none;
+}
+
+.Media
+{
+  height: 400px;
+  padding-top: '50%';
+}

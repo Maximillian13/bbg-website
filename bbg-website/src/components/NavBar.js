@@ -41,6 +41,11 @@ class NavBar extends Component
           </div>
           <div className="NavButton">
             <Button variant="outlined" size="large" fullWidth="true">
+              About Us
+            </Button>
+          </div>
+          <div className="NavButton">
+            <Button variant="outlined" size="large" fullWidth="true">
               Contact Us
             </Button>
           </div>
