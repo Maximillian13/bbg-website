@@ -1,13 +1,20 @@
-.SocBar
-{
-  /* Locks it to the bottom
-  position: fixed;
-  bottom: 0;
-  width: 100%;*/
-}
-
 .SocButton
 {
   width: 25%;
   display: inline-block;
+}
+
+
+.ButtonHolders
+{
+  display: flex;
+  margin: 2% 5%;
+}
+
+.Button
+{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 0 10.4em;
 }

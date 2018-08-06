@@ -8,6 +8,7 @@ class NavBar extends Component
   {
     return (
       <div className="NavBar">
+
         <div className="ButtonCluster">
           <div className="NavButton">
             <Button variant="outlined" size="large" fullWidth="true">

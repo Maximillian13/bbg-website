@@ -1,36 +1,24 @@
 import React, { Component } from 'react';
 import './SocialMediaButtons.css';
-import Button from '@material-ui/core/Button';
+import { CardMedia } from '../../node_modules/@material-ui/core';
+import facebookImg from "../assets/facebook-icon.png"
+import twitterImg from "../assets/twitter-icon.png"
+import tumblrImg from "../assets/tumblr-icon.png"
+import emialImg from "../assets/email-icon.png"
+
 
 class SocialMediaButtons extends Component
 {
   // This is kinda ugly, just wanted to try it out idk what we should acrtually do
   render ()
   {
+    // Margins are also linking to the other place so idk about that
     return (
-      <div className="SocBar">
-        <div className="SocButtonCluster">
-          <div className="SocButton">
-            <Button variant="outlined" size="large" fullWidth="true">
-              Facebook
-            </Button>
-          </div>
-          <div className="SocButton">
-            <Button variant="outlined" size="large" fullWidth="true">
-              Twitter
-            </Button>
-          </div>
-          <div className="SocButton">
-            <Button variant="outlined" size="large" fullWidth="true">
-              Tumblr
-            </Button>
-          </div>
-          <div className="SocButton">
-            <Button variant="outlined" size="large" fullWidth="true">
-              Email
-            </Button>
-          </div>
-        </div>
+      <div className="ButtonHolders">
+        <a href="google.com" target="_blank"> <CardMedia className="Button" image={facebookImg} title="Facebook"/> </a>
+        <a href="google.com" target="_blank"> <CardMedia className="Button" image={twitterImg} title="Twitter"/>  </a>    
+        <a href="google.com" target="_blank"> <CardMedia className="Button" image={tumblrImg} title="Tumblr"/>   </a>   
+        <a href="google.com" target="_blank"> <CardMedia className="Button" image={emialImg} title="Email"/>    </a>  
       </div>
     );
   }
